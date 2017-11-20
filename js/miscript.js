@@ -1,8 +1,7 @@
 $(document).ready(function() {
         $.ajax({
-                var parametros = "hola";
                 data:  parametros,
-                url:   'busquedagrl.php',
+                url:   '../php/busquedagrl.php',
                 type:  'post',
                 beforeSend: function () {
                         $("#lista").html("Procesando, espere por favor...");
