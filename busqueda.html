@@ -8,9 +8,17 @@
 	<!--<script src="js/miscript2.js" language="javascript" type="text/javascript"></script> -->
     <script language="javascript" type="text/javascript">
     function busquedaid(){
+<<<<<<< HEAD
         
         $.ajax({
                 
+=======
+        var parametros = {
+                "valor" : $("#user").val()
+        };
+        $.ajax({
+                data:  parametros,
+>>>>>>> 47ab1a952a3e995916492e1dee4d9a02bb561433
                 url:   'php/busquedaid.php',
                 type:  'post',
                 beforeSend: function () {
@@ -22,9 +30,17 @@
         });
 }
 function busquedafecha(){
+<<<<<<< HEAD
         
         $.ajax({
                 
+=======
+        var parametros = {
+                "valor" : $("#fecha").val()
+        };
+        $.ajax({
+                data:  parametros,
+>>>>>>> 47ab1a952a3e995916492e1dee4d9a02bb561433
                 url:   'php/busquedafecha.php',
                 type:  'post',
                 beforeSend: function () {
