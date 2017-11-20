@@ -3,9 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Prueba</title>
-	<LINK REL=StyleSheet HREF="css/estilos.css" TYPE="text/css" MEDIA=screen>
+	<LINK REL=StyleSheet HREF="css/estilos.css" TYPE="text/css" MEDIA=screen />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" language="javascript" type="text/javascript"></script>
-	<script src="js/miscript2.js" language="javascript" type="text/javascript"></script>
+	<!--<script src="js/miscript2.js" language="javascript" type="text/javascript"></script> -->
+    <script language="javascript" type="text/javascript">
+    function busquedaid(){
+        
+        $.ajax({
+                
+                url:   'php/busquedaid.php',
+                type:  'post',
+                beforeSend: function () {
+                        $("#contenidoporid").html("Procesando, espere por favor...");
+                },
+                success:  function (response) {
+                        $("#contenidoporid").html(response);
+                }
+        });
+}
+function busquedafecha(){
+        
+        $.ajax({
+                
+                url:   'php/busquedafecha.php',
+                type:  'post',
+                beforeSend: function () {
+                        $("#contenidoporfecha").html("Procesando, espere por favor...");
+                },
+                success:  function (response) {
+                        $("#contenidoporfecha").html(response);
+                }
+        });
+}
+    </script>
 </head>
 <body>
     <header>
@@ -23,7 +53,7 @@
     <div class="linea"></div>
     <div id="porid">
         <h2>Busqueda por DNI</h2>
-        <form action="" method="post">
+        <form>
         <input type="number" id="user"/>
         <input type="submit" value="Submit!" onclick="busquedaid()" />
         </form>
@@ -32,7 +62,7 @@
     <div class="linea"></div>
     <div id="porfecha">
         <h2>Busqueda por Fecha</h2>
-        <form action="" method="post">
+        <form>
         <input type="date" id="fecha"/>
         <input type="submit" value="Submit!" />
         </form>
