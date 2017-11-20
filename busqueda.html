@@ -7,7 +7,6 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" language="javascript" type="text/javascript"></script>
 	<!--<script src="js/miscript2.js" language="javascript" type="text/javascript"></script> -->
     <script language="javascript" type="text/javascript">
-<<<<<<< HEAD
     $(document).ready(function() {
     $( "#identifi" ).click(function() {
         $.ajax({
@@ -36,36 +35,6 @@
             });
     });
     });
-=======
-    function busquedaid(){
-        
-        $.ajax({
-                
-                url:   'php/busquedaid.php',
-                type:  'post',
-                beforeSend: function () {
-                        $("#contenidoporid").html("Procesando, espere por favor...");
-                },
-                success:  function (response) {
-                        $("#contenidoporid").html(response);
-                }
-        });
-}
-function busquedafecha(){
-        
-        $.ajax({
-                
-                url:   'php/busquedafecha.php',
-                type:  'post',
-                beforeSend: function () {
-                        $("#contenidoporfecha").html("Procesando, espere por favor...");
-                },
-                success:  function (response) {
-                        $("#contenidoporfecha").html(response);
-                }
-        });
-}
->>>>>>> a347a73d087c3fa322b2231ef53e0c6e03167b18
     </script>
 </head>
 <body>

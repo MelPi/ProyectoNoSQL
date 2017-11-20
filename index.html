@@ -9,7 +9,6 @@
 	<!-- <script src="js/miscript.js" language="javascript" type="text/javascript"></script> -->
     <script language="javascript" type="text/javascript">
         $(document).ready(function() {
-<<<<<<< HEAD
             $.ajax({
 
                     url:   'php/busquedagrl.php',
@@ -22,20 +21,6 @@
                     }
             });
     });
-=======
-        $.ajax({
-                
-                url:   'php/busquedagrl.php',
-                type:  'post',
-                beforeSend: function () {
-                        $("#lista").html("Procesando, espere por favor...");
-                },
-                success:  function (response) {
-                        $("#lista").html(response);
-                }
-        });
-});
->>>>>>> a347a73d087c3fa322b2231ef53e0c6e03167b18
     </script>
 </head>
 <body>
@@ -55,9 +40,5 @@
     <div id="lista">
         
     </div>
-<<<<<<< HEAD
 </body>
 </html>
-=======
-</body>
->>>>>>> a347a73d087c3fa322b2231ef53e0c6e03167b18
