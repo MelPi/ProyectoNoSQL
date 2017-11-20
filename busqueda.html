@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Prueba</title>
+	<LINK REL=StyleSheet HREF="css/estilos.css" TYPE="text/css" MEDIA=screen>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" language="javascript" type="text/javascript"></script>
+	<script src="js/miscript2.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <h1>Asistencia Code</h1>
+    </header>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">General</a></li>
+            <li><a href="busqueda.html">Busqueda</a></li>
+            <li><a href="#">Agregar</a></li>
+            <li><a href="#">Quitar</a></li>
+            <li><a href="#">Actualizar</a></li>
+        </ul>
+    </div>
+    <div class="linea"></div>
+    <div id="porid">
+        <h2>Busqueda por DNI</h2>
+        <form action="" method="post">
+        <input type="number" id="user"/>
+        <input type="submit" value="Submit!" onclick="busquedaid()" />
+        </form>
+        <div id="contenidoporid"></div>
+    </div>
+    <div class="linea"></div>
+    <div id="porfecha">
+        <h2>Busqueda por Fecha</h2>
+        <form action="" method="post">
+        <input type="date" id="fecha"/>
+        <input type="submit" value="Submit!" />
+        </form>
+        <div id="contenidoporfecha"></div>
+    </div>
+    
+</body>
