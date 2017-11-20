@@ -5,7 +5,7 @@ $(document).ready(function() {
                 url:   'busquedagrl.php',
                 type:  'post',
                 beforeSend: function () {
-                        $("#resultado").html("Procesando, espere por favor...");
+                        $("#lista").html("Procesando, espere por favor...");
                 },
                 success:  function (response) {
                         $("#lista").html(response);
