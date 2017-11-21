@@ -7,10 +7,10 @@ function busquedaid(){
                 url:   'busquedaid.php',
                 type:  'post',
                 beforeSend: function () {
-                        $("#resultado").html("Procesando, espere por favor...");
+                        $("#contenidoporid").html("Procesando, espere por favor...");
                 },
                 success:  function (response) {
-                        $("#resultado").html(response);
+                        $("#contenidoporid").html(response);
                 }
         });
 }
@@ -23,10 +23,10 @@ function busquedafecha(){
                 url:   'busquedafecha.php',
                 type:  'post',
                 beforeSend: function () {
-                        $("#resultado").html("Procesando, espere por favor...");
+                        $("#contenidoporfecha").html("Procesando, espere por favor...");
                 },
                 success:  function (response) {
-                        $("#resultado").html(response);
+                        $("#contenidoporfecha").html(response);
                 }
         });
 }

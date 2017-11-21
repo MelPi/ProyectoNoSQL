@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
 	<meta charset="UTF-8">
 	<title>Prueba</title>
-	<LINK REL=StyleSheet HREF="css/estilos.css" TYPE="text/css" MEDIA=screen> 
+	<LINK REL=StyleSheet HREF="css/estilos.css" TYPE="text/css" MEDIA=screen /> 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" language="javascript" type="text/javascript"></script>
-	<script src="js/miscript.js" language="javascript" type="text/javascript"></script>
+	<!-- <script src="js/miscript.js" language="javascript" type="text/javascript"></script> -->
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function() {
+            $.ajax({
+
+                    url:   'php/busquedagrl.php',
+                    type:  'post',
+                    beforeSend: function () {
+                            $("#lista").html("Procesando, espere por favor...");
+                    },
+                    success:  function (response) {
+                            $("#lista").html(response);
+                    }
+            });
+    });
+    </script>
 </head>
 <body>
     <header>
@@ -21,5 +37,8 @@
         </ul>
     </div>
     <div class="linea"></div>
-    
+    <div id="lista">
+        
+    </div>
 </body>
+</html>
