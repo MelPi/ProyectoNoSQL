@@ -9,9 +9,12 @@
     <script language="javascript" type="text/javascript">
     $(document).ready(function() {
     $( "#identifi" ).click(function() {
+<<<<<<< HEAD
         var dni = document.getElementById("user").value;
         dni = String(dni);
         document.cookie = "variabl="+ dni;
+=======
+>>>>>>> 17da60c4899201ebb7e772b0e61f947b85f97afc
         $.ajax({
                     
                     url:   'php/busquedaid.php',
@@ -25,9 +28,12 @@
             });
     });  
     $( "#fechasyh" ).click(function() {
+<<<<<<< HEAD
         var fecha = document.getElementById("fecha").value;
         fecha = String(fecha);
         document.cookie = "variabl2="+ fecha;
+=======
+>>>>>>> 17da60c4899201ebb7e772b0e61f947b85f97afc
         $.ajax({
 
                     url:   'php/busquedafecha.php',
@@ -51,7 +57,7 @@
         <ul>
             <li><a href="index.html">General</a></li>
             <li><a href="busqueda.html">Busqueda</a></li>
-            <li><a href="#">Agregar</a></li>
+            <li><a href="agregar.html">Agregar</a></li>
             <li><a href="#">Quitar</a></li>
             <li><a href="#">Actualizar</a></li>
         </ul>
