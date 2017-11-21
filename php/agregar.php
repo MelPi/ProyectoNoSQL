@@ -4,7 +4,7 @@ $collection = (new MongoDB\Client)->prubea->prubea;
 $document = array( "nombre" => "William Moon" );
 $collection->insert($document);
 /*
-
+ds
 
 $connection = new MongoClient();
 $db = $connection->prubea;
