@@ -40,6 +40,16 @@ h1{
     margin: 0 auto;
     height: auto;
 }
+#contenidoporid{
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+#contenidoporfecha{
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
 
 .linea{
     margin:0 auto;
