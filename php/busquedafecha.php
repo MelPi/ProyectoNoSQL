@@ -1,6 +1,7 @@
 <?php
 require '../../vendor/autoload.php';
 $collection = (new MongoDB\Client)->codenmicoledb->codenmicoledb;
+
 $variable = $_COOKIE["variabl2"];
 $cursor = $collection->find(['estado' => true]);
 foreach ($cursor as $document) {
