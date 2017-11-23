@@ -18,7 +18,12 @@ foreach ($cursor as $document2) {
 }
 echo '</tr>';
 for ($i = 1; $i <= $dia; $i++) {
-    $diaas= $stri .  $i;
+    if($i<=9){
+        $diaas= $stri . '0' . $i;
+    }
+    else{
+        $diaas= $stri .  $i;
+    }
     echo '<tr>';
     echo '<td>Fecha: ';
     echo  $diaas;  
