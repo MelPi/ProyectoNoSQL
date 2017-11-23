@@ -17,8 +17,8 @@
                                 $("#contenidoporagregar").html("Procesando, espere por favor...");
                         },
                         success:  function (response) {
-                                $("#contenidoporagregar").html(response);
-                        }
+                            $("#contenidoporagregar").html(response);
+                    }
                 });
         });
         });
@@ -46,7 +46,10 @@
                 <div>
                         <label for="nombre">nombre:</label>
                         <input type="text" id="nombre" name:"nombre"/>
-                        <input id="agregas" type="button" name="submit" value="agregar :)"/>
+                        <input id="agregas" type="button"  value="agregar :)"/>
+                        <div id="contenidoporagregar">
+                                
+                        </div>
                 </div>
 
                 </form>
@@ -85,7 +88,6 @@
                         <input type="text" id="cestudios" />
                 </div>
             -->
-            </form>
         
     
 </body>
