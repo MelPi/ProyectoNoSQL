@@ -17,8 +17,8 @@
                                 $("#contenidoporagregar").html("Procesando, espere por favor...");
                         },
                         success:  function (response) {
-                            $("#contenidoporagregar").html(response);
-                    }
+                                $("#contenidoporagregar").html(response);
+                        }
                 });
         });
         });
@@ -33,7 +33,7 @@
             <li><a href="index.html">General</a></li>
             <li><a href="busqueda.html">Busqueda</a></li>
             <li><a href="agregar.html">Agregar</a></li>
-            <li><a href="#">Quitar</a></li>
+            <li><a href="quitar.html">Quitar</a></li>
             <li><a href="#">Actualizar</a></li>
         </ul>
     </div>
@@ -46,10 +46,7 @@
                 <div>
                         <label for="nombre">nombre:</label>
                         <input type="text" id="nombre" name:"nombre"/>
-                        <input id="agregas" type="button"  value="agregar :)"/>
-                        <div id="contenidoporagregar">
-                                
-                        </div>
+                        <input id="agregas" type="button" name="submit" value="agregar :)"/>
                 </div>
 
                 </form>
@@ -88,6 +85,7 @@
                         <input type="text" id="cestudios" />
                 </div>
             -->
+            </form>
         
     
 </body>

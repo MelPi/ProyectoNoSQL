@@ -9,18 +9,23 @@
 	<!-- <script src="js/miscript.js" language="javascript" type="text/javascript"></script> -->
     <script language="javascript" type="text/javascript">
         $(document).ready(function() {
-            $.ajax({
-
-                    url:   'php/busquedagrl.php',
+        $( "#identifi2" ).click(function() {
+        var dni = document.getElementById("user").value;
+        dni = String(dni);
+        document.cookie = "variabl3="+ dni;
+        $.ajax({
+                    
+                    url:   'php/quitar.php',
                     type:  'post',
                     beforeSend: function () {
-                            $("#lista").html("Procesando, espere por favor...");
+                            $("#contenidoporid").html("Procesando, espere por favor...");
                     },
                     success:  function (response) {
-                            $("#lista").html(response);
+                            $("#contenidoporid").html(response);
                     }
             });
     });
+        });
     </script>
 </head>
 <body>
@@ -37,8 +42,15 @@
         </ul>
     </div>
     <div class="linea"></div>
-    <div id="lista">
+    <div id="quitarporid">
+        <h2>Eliminar por DNI</h2>
+        <form>
+        <input type="number" id="user"/>
+        <input id="identifi2" type="button" value="Submit!" />
+        </form>
+        <div id="contenidoporid">
         
+        </div>
     </div>
 </body>
 </html>
